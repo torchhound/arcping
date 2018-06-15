@@ -3,7 +3,7 @@ let sslChecker = require('ssl-checker');
 let nodemailer = require('nodemailer');
 
 function handler(event, callback) {
-  sslChecker(process.env.SITE).then(result => 
+  sslChecker(process.env.SITE).then(result => {
     if (result.days_remaining === 0) {
       let transporter = nodemailer.createTransport({
         service: 'Gmail',
@@ -27,8 +27,9 @@ function handler(event, callback) {
           console.log('Message sent: ' + info.response);
         }
       });
-    });
-  callback()
+    }
+  });
+  callback();
 }
 
-exports.handler = arc.scheduled(handler)
+exports.handler = arc.scheduled(handler);

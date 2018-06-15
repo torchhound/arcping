@@ -1,6 +1,6 @@
 # arcping
 
-A serverless function built with [architect](arc.codes) that checks for a valid SSL certificate.
+A serverless function built with [architect](https://arc.codes/) that checks for a valid SSL certificate.
 
 # Install
 
@@ -10,16 +10,22 @@ A serverless function built with [architect](arc.codes) that checks for a valid 
 
 # Run
 
+`export AWS_PROFILE=YOUR_PROFILE`
+
+`export AWS_REGION=YOUR_AWS_REGION`
+
 `npx create`
 
 # Deploy
 
-`npx env SITE example.site`
+`npx env production SITE example.site`
 
-`npx env SENDEMAIL example@gmail.com`
+`npx env production SENDEMAIL example@gmail.com`
 
-`npx env RECEIVEEMAIL example@example.com`
+`npx env production RECEIVEEMAIL example@example.com`
 
-`npx env SENDPASSWORD example`
+`npx env production SENDPASSWORD example`
+
+`export ARC_DEPLOY=production`
 
 `npx deploy`

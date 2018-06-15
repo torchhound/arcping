@@ -1,0 +1,27 @@
+{
+  "name": "arcping",
+  "version": "1.0.0",
+  "description": "Serverless SSL Check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torchhound/arcping.git"
+  },
+  "keywords": [
+    "serverless"
+  ],
+  "author": "https://github.com/torchhound",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torchhound/arcping/issues"
+  },
+  "homepage": "https://github.com/torchhound/arcping#readme",
+  "dependencies": {
+    "@architect/workflows": "^3.1.12",
+    "nodemailer": "^4.6.7",
+    "ssl-checker": "^1.0.2"
+  }
+}

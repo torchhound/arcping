@@ -2,6 +2,8 @@
   "name": "arcping-ssl-check",
   "dependencies": {
     "@architect/data": "^2.0.2",
-    "@architect/functions": "^1.8.10"
+    "@architect/functions": "^1.8.10",
+    "nodemailer": "^4.6.7",
+    "ssl-checker": "^1.0.2"
   }
 }

@@ -28,4 +28,6 @@ A serverless function built with [architect](https://arc.codes/) that checks for
 
 `export ARC_DEPLOY=production`
 
+Run this to update and install all the `node_modules` in `src/`: `npx hydrate`
+
 `npx deploy`

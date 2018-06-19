@@ -27,6 +27,8 @@ function handler(event, callback) {
           console.log('Message sent: ' + info.response);
         }
       });
+    } else {
+      console.log(result);
     }
   });
   callback();
